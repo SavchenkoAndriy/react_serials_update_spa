@@ -12,6 +12,12 @@ let MapDispatchToProps = (dispatch) => {
     }
 };
 
-const CalendarContainer = connect(null, MapDispatchToProps)(Calendar);
+let MapStateToProps = (state) => {
+    return {
+        data: state.Main.data,
+    }
+};
+
+const CalendarContainer = connect(MapStateToProps, MapDispatchToProps)(Calendar);
 
 export default CalendarContainer;

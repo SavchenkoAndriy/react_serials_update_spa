@@ -2,11 +2,13 @@ import {serialsAPI} from "../../API/api";
 
 const GET_STATE = 'GET_STATE';
 const IS_FETCHING = 'IS_FETCHING';
+const SET_DATA = 'SET_DATA';
 const SET_FAVORITES_SERIAL = 'SET_FAVORITES_SERIAL';
 const GET_FAVORITES_SERIAL = 'GET_FAVORITES_SERIAL';
 
 let initialState = {
-    data: new Date().toLocaleString("ua"),
+    data: new Date(),
+    numberSerials: 5,
     isFetching: true,
     SerialList: [],
     FavoritesSerials: [],
@@ -20,6 +22,12 @@ const Main = (state = initialState, action) => {
             return {
                 ...state,
                 SerialList: action.state,
+            };
+        }
+        case SET_DATA: {
+            return {
+                ...state,
+                data: action.data,
             };
         }
 
@@ -66,16 +74,24 @@ export const isFetchingAC = (isFetching) => {
 export const getSerialsListTC = (data) => {
     return (dispatch) => {
         dispatch(isFetchingAC(true));
-        serialsAPI.getSerials(data).then(response => {
+        serialsAPI.getSerials(data.toLocaleString("ua")).then(response => {
             dispatch(setSerialsAC(response));
             dispatch(isFetchingAC(false));
         });
     }
 };
 
+export const setDataAC = (data) => {
+    return {
+        type: SET_DATA,
+        data
+    }
+};
+
 
 export const setDataTC = (data) => {
     return (dispatch) => {
+        dispatch(setDataAC(data));
         dispatch(isFetchingAC(true));
         serialsAPI.getSerials(data.toLocaleString("ua")).then(response => {
             dispatch(setSerialsAC(response));

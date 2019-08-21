@@ -1,11 +1,34 @@
 import React from 'react';
 import Serials from "./Serials";
-import {getSerialsListTC , setFavoritesListAC} from "../../../redux/reducers/main";
+import {getSerialsListTC, setFavoritesListAC} from "../../../redux/reducers/main";
 import {connect} from "react-redux";
 import Preloader from "../../preloader/Preloader";
 
 
-class setDish extends React.Component {
+class setSerials extends React.Component {
+    state = {
+        serialList: this.props.SerialList.slice(0, 5),
+    };
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.SerialList !== this.props.SerialList) {
+            this.setState({
+                    serialList: nextProps.SerialList.slice(0, 5)
+                }
+            );
+        }
+    }
+
+    setSerialList = (e) => {
+        let a = (e * this.props.numberSerials - this.props.numberSerials);
+        let b = e * this.props.numberSerials;
+
+        let qqq = this.props.SerialList.slice(a, b);
+        this.setState({
+                serialList: qqq,
+            }
+        )
+    };
 
     componentDidMount() {
         this.props.getSerialsList(this.props.data);
@@ -14,7 +37,8 @@ class setDish extends React.Component {
 
     render() {
         return <>
-            {this.props.isFetching ? <Preloader/> : <Serials {...this.props}/>}
+            {this.props.isFetching ? <Preloader/> :
+                <Serials setSerialList={this.setSerialList} serialList={this.state.serialList}  {...this.props}/>}
         </>
     };
 }
@@ -23,7 +47,8 @@ class setDish extends React.Component {
 let MapStateToProps = (state) => {
     return {
         data: state.Main.data,
-        SerialList: state.Main.SerialList.slice(0, 5),
+        SerialList: state.Main.SerialList,
+        numberSerials: state.Main.numberSerials,
     }
 };
 
@@ -38,6 +63,6 @@ let MapDispatchToProps = (dispatch) => {
     }
 };
 
-const SerialsContainer = connect(MapStateToProps, MapDispatchToProps)(setDish);
+const SerialsContainer = connect(MapStateToProps, MapDispatchToProps)(setSerials);
 
 export default SerialsContainer;

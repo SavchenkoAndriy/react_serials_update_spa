@@ -7,7 +7,7 @@ const Calendar = (props) => {
     return (
         <div>
             <p>Calendar work</p>
-            <ReactCalendar value={new Date()} onChange={props.setData}/>
+            <ReactCalendar value={props.data} onChange={props.setData}/>
         </div>
     );
 };
