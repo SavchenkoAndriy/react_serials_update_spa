@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 
 const Favorites = (props) => {
@@ -8,7 +9,9 @@ const Favorites = (props) => {
     if (props.FavoritesSerials.length !== 0){
         return (
             <div>
-                Serials component work
+                <div>
+                    <NavLink to="/favorites">Перейти к избранным</NavLink>
+                </div>
                 {props.FavoritesSerials.map(
                     (e) => {
                         return (
@@ -24,6 +27,8 @@ const Favorites = (props) => {
                 }
             </div>
         )
+    } else {
+        return <div>Выбраных нет</div>
     }
 
     return <div>Favorites Work</div>

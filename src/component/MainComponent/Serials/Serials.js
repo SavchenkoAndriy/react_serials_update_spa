@@ -7,42 +7,20 @@ const Serials = (props) => {
     let sss = [];
     let numberList = Math.ceil(props.SerialList.length/props.numberSerials);
 
-    // let qqq = props.SerialList.splice(0,5);
 
     for (let i=1; i<=numberList; i++){
         sss.push(i);
     }
-    //
-    // let jjj = (e) => {
-    //     return (
-    //         qqq.map(
-    //             (e) => {
-    //                 return (
-    //                     <div>
-    //                         <button onClick={()=>props.setFavoritesList(e)}>Добавить</button>
-    //                         <div>{e.show.name}</div>
-    //                         <div>{e.show.type}</div>
-    //                         <div>{e.airstamp.slice(0, 10)} , {e.airtime}</div>
-    //                         <img alt={'ss'} src={e.show.image !== null ? e.show.image.medium : aaa}/>
-    //                     </div>
-    //                 )
-    //             }
-    //         )
-    //     )
-    // };
-    //
-    // let lll = jjj(qqq);
-    //
-    // let ttt = (e) => {
-    //     let a = (e*props.numberSerials - props.numberSerials);
-    //     let b = e*props.numberSerials;
-    //     qqq = props.SerialList.slice(a,b);
-    //     // lll = jjj(qqq);
-    // };
+
+    if (props.serialList.length === 0) {
+        return <div>
+            <p>Не удалось получить даные. Проверте соеденение с интернетом</p>
+        </div>
+    }
+
 
     return (
         <div>
-            Serials component work
             <div>
                 {sss.map((e) => <button onClick={()=>props.setSerialList(e)} className={'numberButton'}>{e}</button>)}
             </div>
@@ -50,7 +28,7 @@ const Serials = (props) => {
                 (e) => {
                     return (
                         <div>
-                            <button onClick={()=>props.setFavoritesList(e)}>Добавить</button>
+                            <button onClick={()=>props.setFavoritesList(e)}>Добавить в избранное</button>
                             <div>{e.show.name}</div>
                             <div>{e.show.type}</div>
                             <div>{e.airstamp.slice(0, 10)} , {e.airtime}</div>
@@ -59,6 +37,9 @@ const Serials = (props) => {
                     )
                 }
             )}
+            <div>
+                {sss.map((e) => <button onClick={()=>props.setSerialList(e)} className={'numberButton'}>{e}</button>)}
+            </div>
         </div>
     );
 };

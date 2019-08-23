@@ -19,13 +19,13 @@ class setSerials extends React.Component {
         }
     }
 
-    setSerialList = (e) => {
-        let a = (e * this.props.numberSerials - this.props.numberSerials);
-        let b = e * this.props.numberSerials;
+    setSerialList = (pageNumber) => {
+        let start = (pageNumber * this.props.numberSerials - this.props.numberSerials);
+        let end = pageNumber * this.props.numberSerials;
 
-        let qqq = this.props.SerialList.slice(a, b);
+        let newSerialList = this.props.SerialList.slice(start, end);
         this.setState({
-                serialList: qqq,
+                serialList: newSerialList,
             }
         )
     };

@@ -5,6 +5,8 @@ const IS_FETCHING = 'IS_FETCHING';
 const SET_DATA = 'SET_DATA';
 const SET_FAVORITES_SERIAL = 'SET_FAVORITES_SERIAL';
 const GET_FAVORITES_SERIAL = 'GET_FAVORITES_SERIAL';
+const DELETE_SERIAL = 'DELETE_SERIAL';
+const SET_INFO = 'SET_INFO';
 
 let initialState = {
     data: new Date(),
@@ -12,6 +14,7 @@ let initialState = {
     isFetching: true,
     SerialList: [],
     FavoritesSerials: [],
+    InfoSerial: undefined,
 };
 
 const Main = (state = initialState, action) => {
@@ -24,6 +27,24 @@ const Main = (state = initialState, action) => {
                 SerialList: action.state,
             };
         }
+
+        case DELETE_SERIAL: {
+
+            let newState = {...state};
+            newState.FavoritesSerials = [...state.FavoritesSerials];
+
+            let i = newState.FavoritesSerials.length;
+
+            while (i--) {
+                if (newState.FavoritesSerials[i].id === action.serial.id) {
+                    newState.FavoritesSerials.splice(i, 1);
+                }
+            }
+
+
+            return newState;
+        }
+
         case SET_DATA: {
             return {
                 ...state,
@@ -50,6 +71,13 @@ const Main = (state = initialState, action) => {
             }
         }
 
+        case SET_INFO: {
+            return {
+                ...state,
+                InfoSerial: action.serial
+            }
+        }
+
         default:
             return state;
     }
@@ -60,6 +88,13 @@ export const setSerialsAC = (state) => {
     return {
         type: GET_STATE,
         state
+    }
+};
+
+export const deleteSerialAC = (serial) => {
+    return {
+        type: DELETE_SERIAL,
+        serial
     }
 };
 
@@ -88,6 +123,13 @@ export const setDataAC = (data) => {
     }
 };
 
+export const setInfoSerialAC = (serial) => {
+    return {
+        type: SET_INFO,
+        serial
+    }
+};
+
 
 export const setDataTC = (data) => {
     return (dispatch) => {
@@ -109,12 +151,11 @@ export const setFavoritesListAC = (serial) => {
     }
 };
 
-// export const getFavoritesSerialsListAC = () => {
-//     console.log('get erial');
-//     return {
-//         type: GET_FAVORITES_SERIAL,
-//     }
-// };
+export const getFavoritesListAC = () => {
+    return {
+        type: GET_FAVORITES_SERIAL,
+    }
+};
 
 
 
