@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactCalendar from 'react-calendar';
+import './calendar.sass';
 
 
 const Calendar = (props) => {

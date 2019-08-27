@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import './favorites.sass';
 
 
 const Favorites = (props) => {
@@ -8,31 +9,28 @@ const Favorites = (props) => {
 
     if (props.FavoritesSerials.length !== 0){
         return (
-            <div>
-                <div>
-                    <NavLink to="/favorites">Перейти к избранным</NavLink>
+            <div className={'favorite'}>
+                <div className={'favorite__nav-link'}>
+                    <NavLink to="/favorites">Перейти до вкладки вибрані</NavLink>
                 </div>
+                <div>
                 {props.FavoritesSerials.map(
                     (e) => {
                         return (
-                            <div>
+                            <div className={'favorite__serial'}>
                                 <div>{e.show.name}</div>
-                                <div>{e.show.type}</div>
-                                <div>{e.airstamp.slice(0, 10)} , {e.airtime}</div>
                                 <img alt={'ss'} src={e.show.image !== null ? e.show.image.medium : aaa}/>
                             </div>
                         )
                     }
                 )
                 }
+                </div>
             </div>
         )
     } else {
-        return <div>Выбраных нет</div>
+        return <div className={'favorite__empty'}>Вибрані пусті</div>
     }
-
-    return <div>Favorites Work</div>
-
 };
 
 export default Favorites;

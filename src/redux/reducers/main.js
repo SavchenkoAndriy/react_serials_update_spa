@@ -10,7 +10,7 @@ const SET_INFO = 'SET_INFO';
 
 let initialState = {
     data: new Date(),
-    numberSerials: 5,
+    numberSerials: 6,
     isFetching: true,
     SerialList: [],
     FavoritesSerials: [],
@@ -59,6 +59,11 @@ const Main = (state = initialState, action) => {
         case SET_FAVORITES_SERIAL: {
             let newState = {...state};
             newState.FavoritesSerials = [...state.FavoritesSerials];
+
+            if (state.FavoritesSerials.includes(action.serial)) {
+                return state;
+            }
+
             newState.FavoritesSerials.push(action.serial);
 
             return newState;

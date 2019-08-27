@@ -7,13 +7,13 @@ import Preloader from "../../preloader/Preloader";
 
 class setSerials extends React.Component {
     state = {
-        serialList: this.props.SerialList.slice(0, 5),
+        serialList: this.props.SerialList.slice(0, 6),
     };
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.SerialList !== this.props.SerialList) {
             this.setState({
-                    serialList: nextProps.SerialList.slice(0, 5)
+                    serialList: nextProps.SerialList.slice(0, 6)
                 }
             );
         }

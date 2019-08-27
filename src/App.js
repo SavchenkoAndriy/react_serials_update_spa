@@ -40,13 +40,13 @@ function Links() {
     return (
         <div className={s.head}>
             <div>
-                <NavLink to="/welcome">Начальная страница</NavLink>
+                <NavLink to="/welcome">Інформаційна сторінка</NavLink>
             </div>
             <div>
-                <NavLink to="/main">Сериалы</NavLink>
+                <NavLink to="/main">Серіали</NavLink>
             </div>
             <div>
-                <NavLink to="/favorites">Избранное</NavLink>
+                <NavLink to="/favorites">Вибране</NavLink>
             </div>
         </div>
     );
@@ -58,6 +58,9 @@ function App() {
         <div className={s.wrap}>
             <Links/>
             <Routs/>
+            <div className={s.footer}>Дизайн сайту і оформлення сайту знаходиться в розробці/оптимізації і може
+                'попливти' на мобільних пристроях та малих екранах
+            </div>
         </div>
     );
 }
