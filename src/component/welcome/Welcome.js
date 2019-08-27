@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink} from 'react-router-dom';
 import './welcome.sass';
 
 const Welcome = () => {
@@ -18,7 +18,7 @@ const Welcome = () => {
                 <a target={'_blank'} href={'http://www.tvmaze.com/api'}>Ссилка на документацію по REST API</a>
             </div>
             <div className={'welcome__nav-link'}>
-                <NavLink to="/main">Перейти до вибору серіалів</NavLink>
+                <NavLink to='/main'>Перейти до вибору серіалів</NavLink>
             </div>
         </div>
     );

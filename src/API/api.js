@@ -12,6 +12,8 @@ export const serialsAPI = {
         let month = data.slice(3, 5);
         let year = data.slice(6, 10);
 
+        console.log('work serialsAPI');
+
         return instance('schedule?country=US&date='+year+'-'+month+'-'+day).then(
             response => response.data
         )

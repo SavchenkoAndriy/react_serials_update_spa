@@ -114,7 +114,7 @@ export const isFetchingAC = (isFetching) => {
 export const getSerialsListTC = (data) => {
     return (dispatch) => {
         dispatch(isFetchingAC(true));
-        serialsAPI.getSerials(data.toLocaleString("ua")).then(response => {
+        serialsAPI.getSerials(data.toLocaleString('ua')).then(response => {
             dispatch(setSerialsAC(response));
             dispatch(isFetchingAC(false));
         });
@@ -140,7 +140,7 @@ export const setDataTC = (data) => {
     return (dispatch) => {
         dispatch(setDataAC(data));
         dispatch(isFetchingAC(true));
-        serialsAPI.getSerials(data.toLocaleString("ua")).then(response => {
+        serialsAPI.getSerials(data.toLocaleString('ua')).then(response => {
             dispatch(setSerialsAC(response));
             dispatch(isFetchingAC(false));
         });
