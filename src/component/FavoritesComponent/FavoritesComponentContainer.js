@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {deleteSerialAC, getFavoritesListAC, setInfoSerialAC} from "../../redux/reducers/main";
+import {deleteSerialAC, setInfoSerialAC} from "../../redux/reducers/main";
 import Preloader from "../preloader/Preloader";
 import FavoritesComponent from "./FavoritesComponent";
 
@@ -25,9 +25,6 @@ let MapStateToProps = (state) => {
 
 let MapDispatchToProps = (dispatch) => {
     return {
-        getSerialsList: () => {
-            dispatch(getFavoritesListAC())
-        },
         deleteSerial: (serial) => {
             dispatch(deleteSerialAC(serial))
         },

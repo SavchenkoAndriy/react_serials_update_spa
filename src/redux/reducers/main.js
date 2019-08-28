@@ -4,9 +4,9 @@ const GET_STATE = 'GET_STATE';
 const IS_FETCHING = 'IS_FETCHING';
 const SET_DATA = 'SET_DATA';
 const SET_FAVORITES_SERIAL = 'SET_FAVORITES_SERIAL';
-const GET_FAVORITES_SERIAL = 'GET_FAVORITES_SERIAL';
 const DELETE_SERIAL = 'DELETE_SERIAL';
 const SET_INFO = 'SET_INFO';
+const SET_NUMBER_SERIAL_ON_PAGE = 'SET_NUMBER_SERIAL_ON_PAGE';
 
 let initialState = {
     data: new Date(),
@@ -29,7 +29,6 @@ const Main = (state = initialState, action) => {
         }
 
         case DELETE_SERIAL: {
-
             let newState = {...state};
             newState.FavoritesSerials = [...state.FavoritesSerials];
 
@@ -40,7 +39,6 @@ const Main = (state = initialState, action) => {
                     newState.FavoritesSerials.splice(i, 1);
                 }
             }
-
 
             return newState;
         }
@@ -69,17 +67,17 @@ const Main = (state = initialState, action) => {
             return newState;
         }
 
-        case GET_FAVORITES_SERIAL: {
-            return {
-                ...state,
-                FavoritesSerials: state.FavoritesSerials
-            }
-        }
-
         case SET_INFO: {
             return {
                 ...state,
                 InfoSerial: action.serial
+            }
+        }
+
+        case SET_NUMBER_SERIAL_ON_PAGE: {
+            return {
+                ...state,
+                numberSerials: action.number
             }
         }
 
@@ -93,6 +91,16 @@ export const setSerialsAC = (state) => {
     return {
         type: GET_STATE,
         state
+    }
+};
+
+export const getSerialsListTC = (data) => {
+    return (dispatch) => {
+        dispatch(isFetchingAC(true));
+        serialsAPI.getSerials(data.toLocaleString('ua')).then(response => {
+            dispatch(setSerialsAC(response));
+            dispatch(isFetchingAC(false));
+        });
     }
 };
 
@@ -110,31 +118,12 @@ export const isFetchingAC = (isFetching) => {
     }
 };
 
-
-export const getSerialsListTC = (data) => {
-    return (dispatch) => {
-        dispatch(isFetchingAC(true));
-        serialsAPI.getSerials(data.toLocaleString('ua')).then(response => {
-            dispatch(setSerialsAC(response));
-            dispatch(isFetchingAC(false));
-        });
-    }
-};
-
 export const setDataAC = (data) => {
     return {
         type: SET_DATA,
         data
     }
 };
-
-export const setInfoSerialAC = (serial) => {
-    return {
-        type: SET_INFO,
-        serial
-    }
-};
-
 
 export const setDataTC = (data) => {
     return (dispatch) => {
@@ -147,8 +136,6 @@ export const setDataTC = (data) => {
     }
 };
 
-
-
 export const setFavoritesListAC = (serial) => {
     return {
         type: SET_FAVORITES_SERIAL,
@@ -156,12 +143,20 @@ export const setFavoritesListAC = (serial) => {
     }
 };
 
-export const getFavoritesListAC = () => {
+export const setInfoSerialAC = (serial) => {
     return {
-        type: GET_FAVORITES_SERIAL,
+        type: SET_INFO,
+        serial
     }
 };
 
+
+export const setNumberSerialOnPageAC = (number) => {
+    return {
+        type: SET_NUMBER_SERIAL_ON_PAGE,
+        number
+    }
+};
 
 
 export default Main;

@@ -29,7 +29,7 @@ const InfoComponent = (props) => {
                     </div>
                 </div>
                 <div className={'info__img'}>
-                    <img alt={'ss'} src={props.InfoSerial.show.image !== null ? props.InfoSerial.show.image.original : Preload}/>
+                    <img alt={Preload} src={props.InfoSerial.show.image !== null ? props.InfoSerial.show.image.original : Preload}/>
                 </div>
             </div>
         )

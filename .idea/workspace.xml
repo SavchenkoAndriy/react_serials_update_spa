@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07d90258-0ab4-4493-90f6-53bdb60b2fac" name="Default" comment="almost ready">
-      <change afterPath="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/infoSerial.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/MainComponent/Favorites/favorites.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/MainComponent/Serials/serials.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/welcome/welcome.sass" afterDir="false" />
+    <list default="true" id="07d90258-0ab4-4493-90f6-53bdb60b2fac" name="Default" comment="almost final version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/FavoritesComponent/Favorites.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponentContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponentContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainComponent/Favorites/Favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/Favorites/Favorites.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainComponent/MainComponent.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/MainComponent.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainComponent/Serials/Serials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/Serials/Serials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/welcome/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,17 +26,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/reducers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="18">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/welcome/Welcome.js">
+        <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="672">
+              <caret line="43" column="1" lean-forward="true" selection-start-line="7" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -56,10 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+        <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+            <state relative-caret-position="256">
+              <caret line="16" column="82" lean-forward="true" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -68,19 +57,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/App.module.sass">
+        <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="400">
+              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.sass">
+        <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -109,33 +101,35 @@
         <option value="$PROJECT_DIR$/src/component/main/FirstContainer.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/MainComponentContainer.js" />
-        <option value="$PROJECT_DIR$/src/API/api.js" />
-        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js" />
-        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponentContainer.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/Favorites/InfoComponent.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/Favorites/FavoritesContainer.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/MainComponent.js" />
         <option value="$PROJECT_DIR$/src/component/ErrorPage/ErrorPage.js" />
         <option value="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent.js" />
         <option value="$PROJECT_DIR$/src/component/welcome/welcome.sass" />
-        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/MainComponent.sass" />
-        <option value="$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/Serials/Serials.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/Serials/serials.sass" />
-        <option value="$PROJECT_DIR$/src/redux/reducers/main.js" />
         <option value="$PROJECT_DIR$/src/component/FavoritesComponent/Favorites.sass" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/Favorites/Favorites.js" />
         <option value="$PROJECT_DIR$/src/component/MainComponent/Favorites/favorites.sass" />
-        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass" />
-        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.js" />
         <option value="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.sass" />
-        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/infoSerial.sass" />
-        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js" />
-        <option value="$PROJECT_DIR$/src/component/welcome/Welcome.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/index.sass" />
         <option value="$PROJECT_DIR$/src/App.module.sass" />
+        <option value="$PROJECT_DIR$/src/component/welcome/Welcome.js" />
+        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoEpisode/InfoEpisode.js" />
+        <option value="$PROJECT_DIR$/src/API/api.js" />
+        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.js" />
+        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/infoSerial.sass" />
+        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponentContainer.js" />
+        <option value="$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js" />
+        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/main.js" />
+        <option value="$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js" />
+        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/buttonComponent.js" />
+        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js" />
+        <option value="$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js" />
       </list>
     </option>
   </component>
@@ -151,7 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,13 +174,23 @@
               <item name="react_serial_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="welcome" type="462c0819:PsiDirectoryNode" />
+              <item name="MainComponent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react_serial_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react_serial_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="MainComponent" type="462c0819:PsiDirectoryNode" />
+              <item name="Calendar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react_serial_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react_serial_app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="MainComponent" type="462c0819:PsiDirectoryNode" />
+              <item name="Serials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react_serial_app" type="b2602c69:ProjectViewProjectNode" />
@@ -206,6 +209,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,7 +275,8 @@
       <workItem from="1566503597442" duration="6181000" />
       <workItem from="1566517896503" duration="4105000" />
       <workItem from="1566597186446" duration="4898000" />
-      <workItem from="1566855418874" duration="13757000" />
+      <workItem from="1566855418874" duration="16104000" />
+      <workItem from="1566946995137" duration="10538000" />
     </task>
     <task id="LOCAL-00001" summary="almost ready">
       <created>1566601575504</created>
@@ -280,17 +285,38 @@
       <option name="project" value="LOCAL" />
       <updated>1566601575504</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="almost final version">
+      <created>1566870723392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566870723392</updated>
+    </task>
+    <task id="LOCAL-00003" summary="almost final version">
+      <created>1566872472739</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566872472739</updated>
+    </task>
+    <task id="LOCAL-00004" summary="almost final version">
+      <created>1566872492817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566872492817</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59243000" />
+    <option name="totallyTimeSpent" value="72128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19479553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22007436" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -302,34 +328,45 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739778" visible="true" weight="0.19543974" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739778" weight="0.16612378" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026022" side_tool="true" weight="0.2703583" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22007436" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49739778" visible="true" weight="0.16612378" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026022" side_tool="true" weight="0.2703583" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="almost ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost ready" />
+    <MESSAGE value="almost final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost final version" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/component/preloader/Prelader.sass">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/redux-store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -342,16 +379,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/MainComponent/MainComponentContainer.js" />
-    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Favorites/FavoritesContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -363,27 +390,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/ErrorPage/ErrorPage.js" />
-    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponentContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/preloader/Preloader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="26" lean-forward="true" selection-start-column="26" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/API/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -394,44 +404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/MainComponent/MainComponent.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/MainComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -466,54 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/infoSerial.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="26" column="138" selection-start-line="26" selection-start-column="138" selection-end-line="26" selection-end-column="138" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Serials/Serials.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="37" column="62" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/welcome/Welcome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -527,13 +459,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/component/welcome/Welcome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="16">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -548,6 +477,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoEpisode/InfoEpisode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/API/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/infoSerial.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/redux-store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponentContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/InfoComponent/InfoComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/FavoritesComponent/FavoritesComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/MainComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/calendar.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Serials/SerialsContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="7" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/buttonComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/Calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="82" lean-forward="true" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/MainComponent/Calendar/CalendarContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
