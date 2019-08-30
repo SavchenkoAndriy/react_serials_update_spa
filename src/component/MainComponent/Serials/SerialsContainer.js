@@ -1,34 +1,39 @@
 import React from 'react';
 import Serials from "./Serials";
-import {getSerialsListTC, setFavoritesListAC} from "../../../redux/reducers/main";
+import {getSerialsListTC, setCurrentPageAC, setFavoritesListAC} from "../../../redux/reducers/main";
 import {connect} from "react-redux";
 import Preloader from "../../preloader/Preloader";
 
 
 class setSerials extends React.Component {
+
+    start = (this.props.CurrentPage * this.props.numberSerials - this.props.numberSerials);
+    end = this.props.CurrentPage * this.props.numberSerials;
+
+
+
     state = {
-        serialList: this.props.SerialList.slice(0, this.props.numberSerials),
+        serialList: this.props.SerialList.slice(this.start, this.end),
     };
 
     componentWillReceiveProps(nextProps) {
-        if (nextProps.SerialList !== this.props.SerialList || nextProps.numberSerials !== this.props.numberSerials) {
+        if (nextProps.CurrentPage !== this.props.CurrentPage ||
+            nextProps.numberSerials !== this.props.numberSerials ||
+            nextProps.SerialList !== this.props.SerialList
+        ) {
+
+            let start = (nextProps.CurrentPage * nextProps.numberSerials - nextProps.numberSerials);
+            let end = nextProps.CurrentPage * nextProps.numberSerials;
+
+
             this.setState({
-                    serialList: nextProps.SerialList.slice(0, nextProps.numberSerials)
+                    serialList: nextProps.SerialList.slice(start, end)
                 }
             );
         }
     }
 
-    setSerialList = (pageNumber) => {
-        let start = (pageNumber * this.props.numberSerials - this.props.numberSerials);
-        let end = pageNumber * this.props.numberSerials;
 
-        let newSerialList = this.props.SerialList.slice(start, end);
-        this.setState({
-                serialList: newSerialList,
-            }
-        )
-    };
 
     componentDidMount() {
         this.props.getSerialsList(this.props.data);
@@ -38,7 +43,7 @@ class setSerials extends React.Component {
     render() {
         return <>
             {this.props.isFetching ? <Preloader/> :
-                <Serials setSerialList={this.setSerialList} serialList={this.state.serialList}  {...this.props}/>}
+                <Serials CurrentPage={this.CurrentPage} setCurrentPage={this.props.setCurrentPage} serialList={this.state.serialList} {...this.props}/>}
         </>
     };
 }
@@ -49,6 +54,7 @@ let MapStateToProps = (state) => {
         data: state.Main.data,
         SerialList: state.Main.SerialList,
         numberSerials: state.Main.numberSerials,
+        CurrentPage: state.Main.CurrentPage,
     }
 };
 
@@ -60,6 +66,9 @@ let MapDispatchToProps = (dispatch) => {
         setFavoritesList: (serial) => {
             dispatch(setFavoritesListAC(serial))
         },
+        setCurrentPage: (number)=>{
+            dispatch(setCurrentPageAC(number));
+        }
     }
 };
 

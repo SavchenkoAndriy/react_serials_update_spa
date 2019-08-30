@@ -7,14 +7,16 @@ const SET_FAVORITES_SERIAL = 'SET_FAVORITES_SERIAL';
 const DELETE_SERIAL = 'DELETE_SERIAL';
 const SET_INFO = 'SET_INFO';
 const SET_NUMBER_SERIAL_ON_PAGE = 'SET_NUMBER_SERIAL_ON_PAGE';
+const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
 let initialState = {
     data: new Date(),
-    numberSerials: 6,
+    numberSerials: 8,
     isFetching: true,
     SerialList: [],
     FavoritesSerials: [],
     InfoSerial: undefined,
+    CurrentPage: 1,
 };
 
 const Main = (state = initialState, action) => {
@@ -34,6 +36,10 @@ const Main = (state = initialState, action) => {
 
             let i = newState.FavoritesSerials.length;
 
+            if (i === 1){
+                newState.InfoSerial = undefined;
+            }
+
             while (i--) {
                 if (newState.FavoritesSerials[i].id === action.serial.id) {
                     newState.FavoritesSerials.splice(i, 1);
@@ -47,6 +53,7 @@ const Main = (state = initialState, action) => {
             return {
                 ...state,
                 data: action.data,
+                CurrentPage: 1,
             };
         }
 
@@ -77,7 +84,15 @@ const Main = (state = initialState, action) => {
         case SET_NUMBER_SERIAL_ON_PAGE: {
             return {
                 ...state,
-                numberSerials: action.number
+                numberSerials: Number(action.number),
+                CurrentPage: 1
+            }
+        }
+
+        case SET_CURRENT_PAGE: {
+            return {
+                ...state,
+                CurrentPage: Number(action.number)
             }
         }
 
@@ -154,6 +169,14 @@ export const setInfoSerialAC = (serial) => {
 export const setNumberSerialOnPageAC = (number) => {
     return {
         type: SET_NUMBER_SERIAL_ON_PAGE,
+        number
+    }
+};
+
+
+export const setCurrentPageAC = (number) => {
+    return {
+        type: SET_CURRENT_PAGE,
         number
     }
 };

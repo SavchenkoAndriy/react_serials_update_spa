@@ -4,13 +4,23 @@ import './serials.sass';
 
 
 const Serials = (props) => {
-    let sss = [];
+    let ButtonsNumber = [];
     let numberList = Math.ceil(props.SerialList.length / props.numberSerials);
 
 
     for (let i = 1; i <= numberList; i++) {
-        sss.push(i);
+        ButtonsNumber.push(i);
     }
+
+    let ButtonComponent =
+        <div className={'numberButton__wrap'}>
+            {ButtonsNumber.map(e => {
+                if (e === props.CurrentPage) {
+                    return <button onClick={() => props.setCurrentPage(e)} className={'numberButtonActive'}>{e}</button>
+                } else return <button onClick={() => props.setCurrentPage(e)} className={'numberButton'}>{e}</button>
+            })
+            }
+        </div>;
 
     if (props.serialList.length === 0) {
         return <div>
@@ -21,9 +31,7 @@ const Serials = (props) => {
 
     return (
         <div>
-            <div className={'numberButton__wrap'}>
-                {sss.map((e) => <button onClick={() => props.setSerialList(e)} className={'numberButton'}>{e}</button>)}
-            </div>
+            {ButtonComponent}
             <div className={'serials__wrap'}>
                 {props.serialList.map(
                     (e) => {
@@ -43,9 +51,7 @@ const Serials = (props) => {
                     }
                 )}
             </div>
-            <div className={'numberButton__wrap'}>
-                {sss.map((e) => <button onClick={() => props.setSerialList(e)} className={'numberButton'}>{e}</button>)}
-            </div>
+            {ButtonComponent}
         </div>
     );
 };
